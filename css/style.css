@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+/* 分组选择器： 公用同一套样式 符号是一个逗号隔开*/
+body,html,.swiper-container,.main{width:100%;height:100%;overflow:hidden}
+html{font-size:100px;}
+/*把所有运动元素隐藏起来 opacity：0*/
+.page1 .gerenjianjie,.page1 .sanjiao,.page1 .jiahao,.page1 .maozhua,.page1 .juxing,.page5 .jiahao{opacity:0}
+/*箭头*/
+.arrow{ z-index:99; position:absolute; bottom:.1rem; left:50%; margin-left:-.32rem; width:.5rem; height:.5rem; background:url(../images/arrow.gif) no-repeat; background-size:cover;
+-webkit-animation: fadeInUp 1s .2s infinite ease both;
+        animation: fadeInUp 1s .2s infinite ease both;
+}
+/*音乐*/
+.music{z-index:100;position:absolute;top:.2rem;left:.2rem;width:.4rem;height:.4rem;background: url("../audio/music.svg") no-repeat;background-size:100% 100%}
+.music audio {
+    display:none;
+}
+/*音乐动画*/
+.music {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* 第一屏*/.page1{	background:url(../images/page1/beijing.png) no-repeat; background-size:100% 100%;}
+.page1 .white{height:9.32rem;background:url(../images/page1/white.png) no-repeat;background-size:cover;margin-top:.5rem;}
+.page1 .yingwen{height:0.22rem;width:2.94rem;background:url(../images/page1/yingwen.png) no-repeat;background-size:cover;margin-left:2rem;margin-top:.5rem;}
+.page1 .gerenjianjie{height:2.94rem;width:2.86rem; background:url(../images/page1/gerenjianjie.png) no-repeat;background-size:cover;margin-left:2rem;margin-top:.5rem;}
+.page1 .juxing{height:0.3rem;width:1.12rem;background:url(../images/page1/juxing.png) no-repeat;background-size:cover;margin-left:5.1rem;margin-top:-.7rem;}
+.page1 .sanjiao{height:1.38rem;width:1.34rem; background:url(../images/page1/sanjiao.png) no-repeat;background-size:cover;}
+.page1 .jiahao{position:absolute;height:1.18rem;width:0.93rem; background:url("../images/page1/jiahao.png") no-repeat;background-size:cover;margin-top:4.6rem;margin-left:.3rem;}
+.page1 .maozhua{height:2.08rem;width:1.14rem;background:url(../images/page1/maozhua.png) no-repeat;background-size:cover;margin-left:2.8rem;margin-top:1rem;}
+/* 第一屏元素动画*/
+#page1 .gerenjianjie{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both}
+#page1 .sanjiao{-webkit-animation: fadeIn 1s ease .6s both;animation: fadeIn 1s ease .6s both}
+#page1 .juxing{-webkit-animation: fadeIn 1s ease .6s both;animation: fadeIn 1s ease .6s both}
+#page1 .jiahao{-webkit-animation: tada 1s ease 1.8s both;animation: tada 1s ease 1.8s both}
+#page1 .maozhua{-webkit-animation: tada 1s ease 1.8s both;animation: tada 1s ease 1.8s both}
+/* 第二屏*/
+.page2{ background:url(../images/page2/beijing.png) no-repeat;background-size: 100% 100%;}
+.page2 .gerenxinxi{width: 2.06rem;height:0.48rem;background:url(../images/page2/gerenxinxi.png) no-repeat;background-size:cover;margin-left:2.2rem;margin-top:1.2rem;}
+.page2 .xingming{width: 2.06rem;height:0.38rem;background:url("../images/page2/xingming.png") no-repeat;background-size: cover;margin-left:1.6rem;margin-top:.6rem;}
+.page2 .xuexiao{width: 3.88rem;height:0.38rem;background:url("../images/page2/xuexiao.png") no-repeat;background-size: cover;margin-left:1.6rem;margin-top:.6rem;}
+.page2 .zhuanye{width: 3.5rem;height: .36rem;background:url("../images/page2/zhuanye.png") no-repeat;background-size: cover;margin-left:1.6rem;margin-top:.6rem;}
+.page2 .nianling{width: 1.51rem;height: .38rem;background:url("../images/page2/nianling.png") no-repeat;background-size: cover;margin-left:1.6rem;margin-top:.6rem;}
+.page2 .gangwei{width: 3.54rem;height: .36rem;background:url("../images/page2/gangwei.png") no-repeat;background-size: cover;margin-left:1.6rem;margin-top:.6rem;}
+.page2 .jiahao{position: absolute;bottom:.5rem;left:.5rem;width:0.92rem;height:1.18rem;background:url("../images/page2/jiahao.png") no-repeat;background-size: cover}
+.page2 .juxing{position: absolute;width:1.12rem;height:0.3rem;background:url("../images/page2/juxing.png") no-repeat;background-size: cover;margin-left:5.1rem;margin-top:.7rem;}
+/* 第二屏元素动画*/
+#page2 span{opacity: 0;}
+#page2 .xingming{-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both}
+#page2 .xuexiao{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page2 .zhuanye{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page2 .nianling{-webkit-animation: bounceInRight 1s ease 4s both;animation: bounceInDown 1s ease 4s both}
+#page2 .gangwei{-webkit-animation: bounceInRight 1s ease 5s both;animation: bounceInDown 1s ease 5s both}
+#page2 .jiahao{-webkit-animation: fadeIn 1s ease .4s both;animation: fadeIn 1s ease .4s both}
+#page2 .juxing{-webkit-animation:juxing 2s ease .6s infinite  both ;animation:juxing 2s ease .6s infinite  both ;}
+
+@-webkit-keyframes juxing{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes juxing{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
+/* 第三屏*/
+.page3{ background:url(../images/page3/beijing.png) no-repeat;background-size: 100% 100%;}
+.page3 .jineng{width: 2.6rem;height:0.58rem;background:url(../images/page3/jineng.png) no-repeat;background-size:cover;margin-left:1.8rem;margin-top:1.2rem;}
+.page3 .xiuli{width:1.38rem; height:.38rem;background:url("../images/page3/xiuli.png") no-repeat;background-size: 100% 100%;margin-left:2.3rem;margin-top:-7rem;}
+.page3 .ai-xiuli{width:3.2rem;height:.38rem;background:url("../images/page3/ai-xiuli.png") no-repeat;background-size: cover;margin-left:2.1rem;margin-top:.7rem;}
+.page3 .wangye{width:3.16rem;height:.38rem;background:url("../images/page3/wangye.png") no-repeat;background-size: cover;margin-left:2.2rem;margin-top:.9rem;}
+.page3 .jianji{width:3.14rem;height:0.38rem;background:url("../images/page3/jianji.png") no-repeat;background-size:cover;margin-left:2.3rem;margin-top:.8rem;}
+.page3 .bangong{width:3.16rem;height:.38rem;background:url("../images/page3/bangong.png") no-repeat;background-size: cover;margin-left:2rem;margin-top:1.8rem;}
+.page3 .ps{width:.72rem; height:.74rem;background:url("../images/page3/ps.png") no-repeat;background-size: 100% 100%;margin-left:1.2rem;margin-top:.5rem;}
+.page3 .pr{width:.72rem; height:.74rem;background:url("../images/page3/pr.png") no-repeat;background-size: 100% 100%;margin-left:1.2rem;margin-top:.5rem;}
+.page3 .ai{width:0.74rem;height:.72rem;background:url("../images/page3/ai.png") no-repeat;background-size: cover;margin-left:1.2rem;margin-top:.5rem;}
+.page3 .dw{width:0.74rem;height:.72rem;background:url("../images/page3/dw.png") no-repeat;background-size: cover;margin-left:1.2rem;margin-top:.5rem;}
+.page3 .Word{width:0.80rem;height:0.93rem;background:url("../images/page3/Word.png") no-repeat;background-size:cover;margin-left:1.2rem;margin-top:.5rem;}
+.page3 .ppt{width:0.78rem;height:.92rem;background:url("../images/page3/ppt.png") no-repeat;background-size: cover;margin-left:1.2rem;margin-top:.5rem;}
+.page3 .jiahao{position: absolute;bottom:.5rem;left:.5rem;width:0.92rem;height:1.18rem;background:url(../images/page3/jiahao.png) no-repeat;background-size: cover}
+.page3 .juxing{position: absolute;width:1.12rem;height:0.3rem;background:url(../images/page3/juxing.png) no-repeat;background-size: cover;margin-left:5.1rem;margin-top: -1rem;}
+/* 第三屏元素动画*/
+#page3 .xiuli{-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both}
+#page3 .ai-xiuli{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page3 .wangye{-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both}
+#page3 .jianji{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page3 .bangong{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page3 .ps{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInDown 1s ease 2s both}
+#page3 .pr{-webkit-animation: bounceInRight 1s ease 3s both;animation: bounceInDown 1s ease 3s both}
+#page3 .ai{-webkit-animation: bounceInRight 1s ease 4s both;animation: bounceInDown 1s ease 4s both}
+#page3 .dw{-webkit-animation: bounceInRight 1s ease 5s both;animation: bounceInDown 1s ease 5s both}
+#page3 .Word{-webkit-animation: bounceInRight 1s ease 6s both;animation: bounceInDown 1s ease 6s both}
+#page3 .ppt{-webkit-animation: bounceInRight 1s ease 5s both;animation: bounceInDown 1s ease 5s both}
+#page3 .jiahao{-webkit-animation: fadeIn 1s ease .4s both;animation: fadeIn 1s ease .4s both}
+#page3 .juxing{-webkit-animation:juxing 2s ease .6s infinite  both ;animation:juxing 2s ease .6s infinite  both ;}
+@-webkit-keyframes juxing{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes juxing{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
+/* 第四屏*/
+.page4{ background:url(../images/page4/beijing.png) no-repeat;background-size: 100% 100%;}
+.page4 .jingli{ width: 2.66rem;height:0.58rem;background:url(../images/page4/jingli.png) no-repeat;background-size: 100% 100%;margin-left:1.8rem;margin-top:1.2rem;}
+.page4 .banganbu{ width: 4.06rem;height:1.52rem;background:url(../images/page4/banganbu.png) no-repeat;background-size: 100% 100%;margin-left:1.2rem;margin-top:0.8rem;}
+.page4 .erdeng{ width: 4.06rem;height:0.94rem;background:url(../images/page4/erdeng.png) no-repeat;background-size: 100% 100%;margin-left:1.2rem;margin-top:0.6rem;}
+.page4 .chenghao{ width: 4rem;height:1.54rem;background:url(../images/page4/chenghao.png) no-repeat;background-size: 100% 100%;margin-left:1.2rem;margin-top:0.6rem;}
+.page4 .jiahao{position: absolute;bottom:.5rem;left:.5rem;width:0.92rem;height:1.18rem;background:url(../images/page4/jiahao.png) no-repeat;background-size: cover}
+.page4 .juxing{position: absolute;width:1.12rem;height:0.3rem;background:url(../images/page4/juxing.png) no-repeat;background-size: cover;margin-left:5.1rem;margin-top: 0.8rem;}
+/* 第四屏元素动画*/
+#page4 .banganbu{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page4 .erdeng{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+#page4 .chenghao{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+#page4 .jiahao{-webkit-animation: fadeIn 1s ease .4s both;animation: fadeIn 1s ease .4s both}
+#page4 .juxing{-webkit-animation:juxing 2s ease .6s infinite  both ;animation:juxing 2s ease .6s infinite  both ;}
+@-webkit-keyframes juxing{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes juxing{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
+/* 第五屏*/
+.page5{ background:url(../images/page5/beijing.png) no-repeat;background-size: 100% 100%;}
+.page5 .lianxifangshi {width: 2.34rem;height:0.34rem;background:url(../images/page5/lianxifangshi.png) no-repeat;background-size: 100% 100%;margin-left:2.1rem;margin-top:2rem;}
+.page5 .lianxiwo{ width: 2.34rem;height:0.34rem;background:url(../images/page5/lianxiwo.png) no-repeat;background-size: 100% 100%;margin-top:1.5rem;margin-left:2rem;}
+.page5 .weixin{ width: 2.56rem;height:2.56rem;background:url(../images/page5/weixin.png) no-repeat;background-size: 100% 100%;margin-top:1.5rem;margin-left:2rem;}
+.page5 .jiahao{position: absolute;bottom:.5rem;left:.5rem;width:0.92rem;height:1.18rem;background:url(../images/page5/jiahao.png) no-repeat;background-size: cover}
+.page5 .juxing{position: absolute;width:1.12rem;height:0.3rem;background:url(../images/page5/juxing.png) no-repeat;background-size: cover;margin-left:5.1rem;margin-top:-1.6rem;}
+/* 第五屏元素动画*/
+#page5 .jiahao{-webkit-animation: tada 3s ease 1.8s both;animation: tada 3s ease 1.8s both}
+#page5 .juxing{-webkit-animation:juxing 2s ease .6s infinite  both ;animation:juxing 2s ease .6s infinite  both ;}
+#page5 .lianxiwo{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+#page5 .weixin{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+@-webkit-keyframes juxing{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes juxing{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
